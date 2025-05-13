@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container-date {
+    transition: all .4s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: url('../img/pexels-paul-kerby-genil-3703961.jpg') fixed center no-repeat; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000000;
+    animation: background 80s infinite linear;
+}
+
+@keyframes background {
+    0% {
+        background: url("../img/pexels-paul-kerby-genil-3703961.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    10% {
+        background: url("../img/pexels-chait-goli-1918290.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    20% {
+        background: url("../img/pexels-ivan-siarbolin-3695799.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    30% {
+        background: url("../img/pexels-sebastiaan-stam-1097456.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    40% {
+        background: url("../img/pexels-ray-bilcliff-1533512.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    50% {
+        background: url("../img/pexels-james-lee-4077709.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    60% {
+        background: url("../img/pexels-olegbf-oleg-borisov-1342650.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    70% {
+        background: url("../img/pexels-merlin-lightpainting-11167644.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    80% {
+        background: url("../img/pexels-artūras-kokorevas-5749961.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    90% {
+        background: url("../img/pexels-ilyasick-photo-10280634.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    100% {
+        background: url("../img/pexels-aleksandar-pasaric-2603464.jpg")fixed center no-repeat;
+        background-size: cover;
+    }
+}
+
+.slide-up {
+    transition: all .4s ease-in-out;
+    top: 0 !important;
+    height: 0% !important;
+    z-index: -200000000;
+}
+
+#container-date::before {
+    transition: all .4s ease-in-out;
+    position: absolute;
+    content: ">";
+    bottom: 0;
+    transform: rotate(90deg);
+    font-size: 30pt;
+    color: whitesmoke;
+}
+
+
+#container-date .clock {
+    transition: all .4s ease-in-out;
+    color: whitesmoke;
+    font: small-caps lighter 43px/150% "helvetica Neue", sans-serif;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#date {
+    transition: all .4s ease-in-out;
+    text-align: center;
+}
+
+.slide-up .clock {
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    z-index: -1000;
+    text-align: center;
+}
